@@ -15,11 +15,7 @@ const AppButton = ({
 }: AppButtonProps) => {
 	return (
 		<button
-			className={
-				disable ? `${className} bg-slate-500 text-slate-700` : ""
-			}
-			disabled={disable || loading}
-			onClick={onClick}
+			className={`${className} py-2 px-8 rounded-full bg-mainColor text-normal font-normal text-white`}
 			type={type}
 		>
             {children}
