@@ -7,14 +7,13 @@ interface AppButtonProps extends React.ButtonHTMLAttributes<HTMLElement> {
 
 const AppButton = ({
 	className,
-	loading,
-	disable,
 	children,
 	type,
 	onClick,
 }: AppButtonProps) => {
 	return (
 		<button
+		onClick={onClick}
 			className={`${className} py-2 px-8 rounded-full bg-mainColor text-normal font-normal text-white`}
 			type={type}
 		>
